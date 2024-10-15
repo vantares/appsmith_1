@@ -1,0 +1,7 @@
+UPDATE course_module
+  SET name = {{inp_moduleName.text}},
+	description = {{inp_moduleDescription.text}},
+	duration = {{inp_moduleDuration.text}},
+	course_subject_id = {{sel_newModuleSubject.selectedOptionValue}},
+	course_id = {{sel_newModuleCourse.selectedOptionValue}}
+  WHERE id = {{ tbl_modules.triggeredRow.Id }};

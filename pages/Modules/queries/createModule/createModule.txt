@@ -1,0 +1,10 @@
+INSERT INTO course_module
+  (name, description, duration, course_subject_id, course_id)
+VALUES
+  (
+    {{ inp_moduleName.text }},
+    {{ inp_moduleDescription.text }},
+    {{ inp_moduleDuration.text }},
+		{{sel_newModuleSubject.selectedOptionValue}},
+		{{sel_newModuleCourse.selectedOptionValue}}
+  );
